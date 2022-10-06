@@ -352,11 +352,15 @@ next7.addEventListener('click', function () {
     fell.classList.remove('hiddenn');
     disableScroll();
     setTimeout(() => {
+      audio2.pause();
+      audio.play();
       fell.classList.add('hiddenn');
       window.location.reload();
       enableScroll();
     }, 10000);
     reset.addEventListener('click', function () {
+      audio2.pause();
+      audio.play();
       fell.classList.add('hiddenn');
       window.location.reload();
       enableScroll();
